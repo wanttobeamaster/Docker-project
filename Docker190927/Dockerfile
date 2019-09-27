@@ -68,13 +68,15 @@ RUN apt-get -y update; \
     apt-get install -y openssh-server;\
     apt-get install -y net-tools;rm -rf /var/lib/apt/lists/*
 
-RUN useradd -s /bin/bash test && echo "test:123" | chpasswd;
+RUN useradd -s /bin/bash flag && echo "flag:199805" | chpasswd
+COPY ./flag.txt /home/flag/flag.txt
+
+#RUN echo "root:xiaozq" | chpasswd
+RUN useradd -s /bin/bash test && echo "test:123" | chpasswd
 WORKDIR /home/test
-COPY ./ee.py /home/test/God.py
-COPY ./flag.txt /root/flag.txt
 COPY ./flagSet.sh /usr/local/bin/
-COPY ./flag.txt /home/test/flag.txt
 RUN  chmod u+x /usr/local/bin/flagSet.sh
+
 
 EXPOSE 6379
 CMD ["121.248.54.212","6379","foobared","0","-1"]
