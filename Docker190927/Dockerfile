@@ -47,8 +47,8 @@ VOLUME /data
 ############################################
 
 RUN apt-get -y update \
-    && apt-get -y install python3-pip \
-    && pip3 install pyinstaller -i https://pypi.tuna.tsinghua.edu.cn/simple\
+    #&& apt-get -y install python3-pip \
+    #&& pip3 install pyinstaller -i https://pypi.tuna.tsinghua.edu.cn/simple\
     #&& pip3 install --upgrade pip \
     #&& pip3 install pygame \
     && apt-get -y install wget build-essential bison autoconf \
@@ -68,7 +68,7 @@ RUN apt-get -y update; \
     apt-get install -y openssh-server;\
     apt-get install -y net-tools;rm -rf /var/lib/apt/lists/*
 
-RUN useradd -s /bin/bash flag && echo "flag:199805" | chpasswd
+RUN useradd -s /bin/bash flag && echo "flag:abcdefg" | chpasswd
 COPY ./flag.txt /home/flag/flag.txt
 
 #RUN echo "root:xiaozq" | chpasswd
