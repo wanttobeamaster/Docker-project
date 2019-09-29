@@ -10,3 +10,7 @@
 *finish in 190927*  
 *introduction:*  
 *	this is the third item,in this item,i set two ordinary usr,you can use "ssh test@Attacked ip and passwd:123 into the attacked system,then,you can see that the flag is in "/home/flag/flag.txt",you should obtain the passwd of the usr flag by john,you can study how to answer this question by visit <https://blog.csdn.net/frank_ldw/article/details/81261626>,"
+## Docker4:resolved domain to ip
+*finish in 190929*
+*introduction:*  
+*	The 4th item is about of domain resolve,you should add "123.206.87.240 flag.baidu.com" to /etc/hosts,and then ,run /home/test/dist/getflag,you can get the flag
