@@ -1,0 +1,3 @@
+## steal token again
+* finish in 191006
+* reference<https://github.com/1u4nx/Exploit-Exercises-Nebula/blob/master/Level13%E2%80%94%E2%80%94%E5%86%8D%E6%AC%A1%E7%AA%83%E5%8F%96token.org>,This item main use tool "gdb",the flag is hide in /home/flag/flag.txt,but only flag can read it,in the getflag,first compare whether current id equal 1000,if not,finish the program,and i show the main of the program,analyzing it,you will use the "gdb" to get the flag's passwd,"gdb getflag"-->"start"-->"disassemble main"-->"copy cmp address"-->"b *address"-->continue-->"set $eax=1000"-->"continue"-->got the passwd

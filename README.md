@@ -22,3 +22,7 @@
 *finish in 191005*  
 *introduction:*
 *	This item is recurrence the <https://github.com/1u4nx/Exploit-Exercises-Nebula/blob/master/Level05%E2%80%94%E2%80%94%E7%AA%83%E5%8F%96%E6%9C%BA%E5%AF%86%E6%96%87%E4%BB%B6.org>,beside the dockerfile and flagset,after get into the container,it has two user,and flag.txt is in /home/flag/flag.txt,first,I generate the rsa of test,copy id_rsa.pub and save it in authorized_keys,the ssh into flag,create .ssh file,and save authorized_keys,id_rsa,id_rsa.pub(test) in .ssh,Then,backup .ssh.so,if you want to get the flag,you should tar the .backup/.xxxxx,and copy id_rsa and id_rsa.pub to /home/test/.ssh.finally,ssh flag@localhost,it will get into flag automatically.   
+## Docker7:thefting the token again
+*finish in 191006*  
+*introduction:*
+* reference<https://github.com/1u4nx/Exploit-Exercises-Nebula/blob/master/Level13%E2%80%94%E2%80%94%E5%86%8D%E6%AC%A1%E7%AA%83%E5%8F%96token.org>,This item main use tool "gdb",the flag is hide in /home/flag/flag.txt,but only flag can read it,in the getflag,first compare whether current id equal 1000,if not,finish the program,and i show the main of the program,analyzing it,you will use the "gdb" to get the flag's passwd,"gdb getflag"-->"start"-->"disassemble main"-->"copy cmp address"-->"b *address"-->continue-->"set $eax=1000"-->"continue"-->got the passwd  
