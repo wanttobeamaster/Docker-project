@@ -22,7 +22,6 @@
 > cd /tmp  
 > touch /token  
 > vim yy:  
-
 > ``` 
 >	#! /bin/bash
 >	while true
