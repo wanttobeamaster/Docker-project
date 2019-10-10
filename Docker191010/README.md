@@ -9,19 +9,20 @@
 > step 1:  
 > cd /tmp  
 > vim xx:  
- ```
-	#! /bin/bash
-	while true
-	do
-		nc -l -p 18211
-	done
- ```
+> ```
+>	#! /bin/bash
+>	while true
+>	do
+>		nc -l -p 18211
+>	done
+>  ```
 >chmod +x xx;./x  
 
 > step 2:  
 > cd /tmp  
 > touch /token  
 > vim yy:  
+
 > ``` 
 >	#! /bin/bash
 >	while true
@@ -35,11 +36,11 @@
 > step 3:  
 > cd /tmp  
 > vim zz  
-```
-	#! /bin/bash
-	while true
-	do
-		nice -n 19 /home/flag19/demo /tmp/token10 127.0.0.1
-	done
- ```
+> ```
+>	#! /bin/bash
+>	while true
+>	do
+>		nice -n 19 /home/flag19/demo /tmp/token10 127.0.0.1
+>	done
+> ```
 >chmod +x zz;./zz  
