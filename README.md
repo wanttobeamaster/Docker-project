@@ -40,6 +40,6 @@
 *reference<https://github.com/1u4nx/Exploit-Exercises-Nebula/blob/master/Level10%E2%80%94%E2%80%94%E8%AE%BF%E9%97%AE%E7%AB%9E%E6%80%81%E6%9D%A1%E4%BB%B6%E6%BC%8F%E6%B4%9E.org>,answer this item,you need open three window.*  
 ## DOcker10:use ncat -e
 * finish in 191011
-* __introduction:__
+* __introduction:__  
     This item is about nc cracker command,in the container,I run the command "nc -l -p portx -e /bin/bash",and when you get into the envirnoment,the system monitor the port automatically,and you need get the ip of the container,finally,you input "nc ip portxx" in you machine,you can get the "bash"  
 
