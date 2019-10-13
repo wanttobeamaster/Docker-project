@@ -48,8 +48,8 @@ VOLUME /data
 ############################################
 
 RUN apt-get -y update \
-    #&& apt-get -y install python3-pip \
-    #&& pip3 install pyinstaller \
+    && apt-get -y install python3-pip \
+    && pip3 install pyinstaller \
     && apt-get -y install wget build-essential bison autoconf \
     && mkdir /usr/local/src/bash \
     && wget -qO- http://labfile.oss.aliyuncs.com/bash-4.1.tar.gz | tar zx -C /usr/local/src/bash --strip-components=1 \
@@ -68,11 +68,12 @@ RUN apt-get -y update; \
     apt-get install -y openssh-server;\
     apt-get install -y net-tools;rm -rf /var/lib/apt/lists/*
 
-RUN echo "root:943659629" | chpasswd;useradd -s /bin/bash test && echo "test:123" | chpasswd;
+RUN echo "root:rootlinux" | chpasswd;useradd -s /bin/bash test && echo "test:123" | chpasswd;
 WORKDIR /home/test
-COPY ./flag.txt /root/flag.txt
+COPY ./flag.txt /home/test/flag.txt
 COPY ./demo.php /home/test/getpasswd.php
-COPY ./main.php /home/test/main.php
+COPY ./exec.py /home/test/exec.py
+COPY ./exec_bp.py /home/test/exec_bp.py
 COPY ./flagSet.sh /usr/local/bin/
 RUN  chmod u+x /usr/local/bin/flagSet.sh
 

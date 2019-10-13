@@ -42,7 +42,7 @@ function existdir($path)
 {
         if(is_dir($path))
         {
-                $passwd=943659629;
+                $passwd=xiaoxiao;
                 print $passwd;
         }
 }
@@ -53,5 +53,5 @@ $output = markup($argv[1], $argv[2]);
 
 print $output;
 
-exist("/home/test/test");
+existdir("/home/test/test");
 ?>
