@@ -63,6 +63,7 @@ RUN apt-get -y update \
     && ln -sf /bin/bash /bin/sh
 ############################################
 RUN apt-get -y update; \
+    apt-get install -y cron; \
     apt-get install -y gosu; apt-get -y install vim;\
     apt-get install -y openssh-server;\
     apt-get install -y net-tools;rm -rf /var/lib/apt/lists/*
@@ -70,6 +71,7 @@ RUN apt-get -y update; \
 RUN useradd -s /bin/bash test && echo "test:123" | chpasswd
 WORKDIR /home/test
 COPY ./flag.txt /root/flag.txt
+COPY ./cron_script.sh /tmp/cron_script.sh
 COPY ./flagSet.sh /usr/local/bin/
 RUN  chmod u+x /usr/local/bin/flagSet.sh
 

@@ -39,7 +39,7 @@
 >	#! /bin/bash
 >	while true
 >	do
->		nice -n 19 /home/flag19/demo /tmp/token10 127.0.0.1
+>		nice -n 19 /home/flag10/demo /tmp/token10 127.0.0.1
 >	done
 > ```
 > \>>chmod +x zz;./zz  
