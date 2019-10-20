@@ -46,6 +46,11 @@
 * finish in 191013
 * __Introduction__:  
     reference<https://github.com/1u4nx/Exploit-Exercises-Nebula/blob/master/Level09%E2%80%94%E2%80%94PHP%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%AE%89%E5%85%A8%E9%97%AE%E9%A2%98.org>.analyze the "exec" and "getpasswd",the way to answer the item is: vim ls:[email "{${system(getflag)}}"] --> vim getflag:#! /bin/bash;mkdir /home/test/test --> PATH=/home/test:$PATH --> ./exec "php getpasswd ./ls" get the root passwd  
+## Docker12:iptables+nc(iptables防火墙规则)
+* finish in 191019
+* __Introduction:__  
+first,run ./getflag,and open another windows,input "nc localhost 1024 -p 65535",if the first window output "rand=2",you should reopen this window,and clear the port states by the flow of below picture.repeat it ,untill the first window output nothing,then you can input "isme" in the second window,you will get the flag  
+![port states transform 图标](https://img-blog.csdn.net/20140705165548125?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvempzeWhqaA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)  
 
 
 
