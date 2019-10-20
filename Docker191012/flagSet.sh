@@ -17,6 +17,7 @@ chmod u+s /home/test/exec
 #exec_bp.py
 chmod 775 /home/test/exec_bp.py
 #flag.txt
+chown "flag:flag" /home/test/flag.txt
 chmod 770 /home/test/flag.txt 
 
 connectRes=$(redis-cli -h $1 -p $2 -a $3 set "container_flag_$4_$5" $flagCont)

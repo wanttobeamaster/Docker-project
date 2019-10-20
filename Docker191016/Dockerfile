@@ -63,18 +63,15 @@ RUN apt-get -y update \
     && ln -sf /bin/bash /bin/sh
 ############################################
 RUN apt-get -y update; \
-    apt-get -y install php5; \
+    apt-get -y install iptables; \
     apt-get install -y gosu; apt-get -y install vim;\
     apt-get install -y openssh-server;\
     apt-get install -y net-tools;rm -rf /var/lib/apt/lists/*
 
-RUN useradd -s /bin/bash flag && echo "flag:rootlinux" | chpasswd; \
-    useradd -s /bin/bash test && echo "test:123" | chpasswd;
+RUN useradd -s /bin/bash test && echo "test:123" | chpasswd;
 WORKDIR /home/test
-COPY ./flag.txt /home/test/flag.txt
-COPY ./demo.php /home/test/getpasswd.php
-COPY ./exec.py /home/test/exec.py
-COPY ./exec_bp.py /home/test/exec_bp.py
+COPY ./flag.txt /root/flag.txt
+COPY ./demo.py  /home/test/getflag.py
 COPY ./flagSet.sh /usr/local/bin/
 RUN  chmod u+x /usr/local/bin/flagSet.sh
 
