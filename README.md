@@ -51,6 +51,11 @@
 * __Introduction:__  
 first,run ./getflag,and open another windows,input "nc localhost 1024 -p 65535",if the first window output "rand=2",you should reopen this window,and clear the port states by the flow of below picture.repeat it ,untill the first window output nothing,then you can input "isme" in the second window,you will get the flag  
 ![port states transform 图标](https://img-blog.csdn.net/20140705165548125?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvempzeWhqaA==/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)  
+##Docker191020(端口扫描)
+* finish in 191021
+* __introduction:__  
+__the former items can get into the container via the ssh,but this time,ssh is filtered,so,you can find the another door via the "nmap -p 0-  ip",and use "nc ip port" into it__  
+
 
 
 
