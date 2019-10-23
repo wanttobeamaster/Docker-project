@@ -54,7 +54,11 @@ first,run ./getflag,and open another windows,input "nc localhost 1024 -p 65535",
 ## Docker191020(端口扫描)
 * __finish in 191021__
 * __introduction:__  
-__the former items can get into the container via the ssh,but this time,ssh is filtered,so,you can find the another door via the "nmap -p 0-  ip",and use "nc ip port" into it__  
+the former items can get into the container via the ssh,but this time,ssh is filtered,so,you can find the another door via the "nmap -p 0-  ip",and use "nc ip port" into it  
+## Docker14:grep(linux正则表达式)
+* finish in 191023
+* __introduction:__  
+run "cat threekingdoms | grep '\d' > /tmp/234.txt",and then cd /tmp,cat 234.txt,joint the number  +
 
 
 
