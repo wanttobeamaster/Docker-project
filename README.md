@@ -59,7 +59,7 @@ the former items can get into the container via the ssh,but this time,ssh is fil
 * finish in 191023
 * __introduction:__  
 run "cat threekingdoms | grep '\d' > /tmp/234.txt",and then cd /tmp,cat 234.txt,joint the number  
-## Docker15:attack the lua script
+## Docker15:attack the lua script(攻击lua脚本)
 * finish in 191024
 * Question:  
     - how to setup the lua?the first time i use "apt-get install lua",and run the program,it will feedback that "module socket not found",so i setuo it via other way:<https://blog.csdn.net/weixin_34082854/article/details/91495930>,<https://www.cnblogs.com/ElementCraft/articles/5847057.html>
